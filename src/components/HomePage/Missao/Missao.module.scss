@@ -1,0 +1,79 @@
+@use '../../../styles/variables.scss' as v;
+
+.Missao {
+  background-color: v.$primaryColor;
+
+  display: flex;
+  justify-content: center;
+}
+
+.MissaoContainer {
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.25rem;
+}
+
+.MissaoText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+  color: v.$white;
+
+  h2 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+}
+
+.MissaoCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.MissaoCardBox {
+  border: 1px solid v.$white;
+  padding: 2rem;
+  border-radius: 0.875rem;
+  color: v.$white;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+    margin-bottom: 0.5rem;
+  }
+
+
+  p {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+}
+
+@media (width > v.$breakpoint-mobile) {
+
+  .MissaoText {
+    text-align: left;
+    align-items: start;
+  }
+
+  .MissaoCard {
+    gap: 1rem;
+  }
+
+  .MissaoCardBox {
+    width: fit-content;
+    max-width: 390px;
+  }
+}

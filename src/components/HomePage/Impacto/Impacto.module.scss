@@ -1,0 +1,69 @@
+@use '../../../styles/variables.scss' as v;
+
+.Impacto {
+  display: flex;
+  justify-content: center;
+}
+
+.ImpactoContainer {
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem;
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ImpactoText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+
+  h2 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+}
+
+.ImpactoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ImpactoCardBox {
+  border: 1px solid #000;
+  width: 100%;
+  max-width: 380px;
+  padding: 2rem;
+  border-radius: 0.875rem;
+  text-align: center;
+
+  h3 {
+    color: v.$primaryColor;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  p {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+}
+
+@media (width > 768px) {
+  .ImpactoCard {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
