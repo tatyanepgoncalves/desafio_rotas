@@ -1,5 +1,5 @@
 import f from "./Footer.module.scss";
-import Logo from '../../../../public/logo.svg';
+import Logo from '/logo.svg';
 import { Copyright, Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {

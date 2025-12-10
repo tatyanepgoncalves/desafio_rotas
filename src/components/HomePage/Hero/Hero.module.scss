@@ -79,13 +79,19 @@
 .HeroVoluntario {
   border: none;
   background-color: v.$primaryColor;
-  color: v.$white;
   transition: all 0.5s ease;
+
+  a {
+    color: v.$white;
+    &:hover {
+      color: v.$primaryColor;
+    }
+  }
+  
   
   &:hover {
     border: 1.4px solid v.$primaryColor;
     background-color: transparent;
-    color: v.$primaryColor;
   }
 }
 

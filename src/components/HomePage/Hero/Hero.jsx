@@ -1,6 +1,7 @@
 import h from "./Hero.module.scss";
 import ImageHero from "../../../assets/image-hero.png";
-import { Stethoscope } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Stethoscope } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -20,7 +21,9 @@ export default function Hero() {
           </div>
 
           <div className={h.HeroBtn}>
-            <button className={h.HeroVoluntario}>Seja voluntário</button>
+            <button className={h.HeroVoluntario}>
+              <Link to="/seja-voluntario">Seja voluntário</Link>
+            </button>
             <button className={h.HeroAjudar}>Como ajudar</button>
           </div>
         </section>

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../../../../public/logo.svg';
+import Logo from '/logo.svg';
 import h from './Header.module.scss';
 import { useMenuMobile } from "../../../hooks/useMenuMobile"
 import { X, Menu } from "lucide-react"
