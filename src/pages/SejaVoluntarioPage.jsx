@@ -1,7 +1,11 @@
-import React from 'react'
+import Hero from '../components/SejaVoluntarioPage/Hero/Hero'
+import Form from "../components/SejaVoluntarioPage/Form/Form"
 
 export default function SejaVoluntarioPage() {
   return (
-    <div>SejaVoluntarioPage</div>
+    <main>
+      <Hero />
+      <Form />
+    </main>
   )
 }

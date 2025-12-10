@@ -1,0 +1,117 @@
+@use '../../../styles/variables.scss' as v;
+
+.Form {
+  display: flex;
+  justify-content: center;
+  background-color: v.$primaryColor;
+}
+
+.FormContainer {
+  width: 100%;
+  max-width: 80rem;
+  padding: 4rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: v.$white;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+}
+
+.FormContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.InputsBox, .TextareaBox {
+  h3 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */ 
+  }
+}
+
+.InputsBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.InputForm {
+  width: 100%;
+  background-color: v.$bgInput;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  border: 1px solid #999;
+
+  &::placeholder {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+    color: #999;
+  }
+}
+
+.TextareaBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    border: 1px solid #999;
+    background-color: v.$bgInput;
+
+    &::placeholder {
+      font-size: 0.75rem; /* 12px */
+      line-height: 1rem; /* 16px */
+      color: #999;
+    }
+  }
+}
+
+
+.FormBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+  p {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+    text-align: center;
+  }
+}
+
+.BtnForm {
+  padding: 1rem 1.25rem;
+  background-color: v.$primaryColor;
+  color: v.$white;
+  border-radius: 0.75rem;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+
+  &:hover {
+    background-color: rgba(0, 116, 90, 0.9);
+  }
+}
+
+@media (width > v.$breakpoint-mobile) {
+  .FormBottom {
+    width: 900px;
+  }
+}
